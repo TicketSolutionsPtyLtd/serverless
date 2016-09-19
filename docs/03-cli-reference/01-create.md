@@ -31,6 +31,7 @@ Most commonly used templates:
 - aws-python
 - aws-java-maven
 - aws-java-gradle
+- plugin
 
 ## Examples
 
@@ -58,3 +59,11 @@ will use the already present directory.
 
 Additionally Serverless will rename the service according to the path you provide. In this example the service will be
 renamed to `my-new-service`.
+
+### Creating a new plugin 
+
+```
+serverless create --template plugin
+```
+
+This example will generate scaffolding for a hello world plugin that demonstrates how to create a new command and how to listen to the various events available. 
