@@ -20,6 +20,12 @@ First we need to install the corresponding plugin in the services root directory
 
 Note: Custom plugins are added on a per service basis and are not applied globally
 
+## Service local plugin
+
+If you are working on a plugin or have a plugin that is just designed for one project you can add them to the `.serverless_plugins` directory at the root of your service. 
+
+The plugin will be loaded based on being named `custom-serverless-plugin.js` or `custom-serverless-plugin\index.js` in the root of `.serverless_plugins` folder.
+
 ## Adding the plugin to a service
 
 We need to tell Serverless that we want to use the plugin inside our service. We do this by adding the name of the plugin to the `plugins` section in the `serverless.yml` file.
